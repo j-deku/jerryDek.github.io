@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Platform</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+   <p style="color: #f5f5f5; text-align: center;"> <i>Fill in the form to sign Up</i></p><br><br>
+    <a id="GoBack" href="./"></a>
+
+    <div class="container"  id="container">
+        <button type="button" class="closeButton" onclick="closeContainer()">X</button>
+        <h2><u>SignUp Form</u></h2>
+        <form action="./signUp" id="signUp" onclick="signUp()" method="post">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="your name" spellcheck="true" aria-invalid="spelling" aria-autocomplete="both" autofocus required/><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Your email address" spellcheck="true" autocomplete="on" autofocus required/><br>
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" name="password" placeholder="******** " spellcheck="true" maxlength="8" autocomplete="on" autofocus required/><br><br>
+            <cite>By clicking on the <a class="signLink" href="/">sign Up</a> button, you agree to our terms and conditions.</cite>
+            <button type="submit" class="signUpBtn">Sign Up</button><br><hr class="hr">
+        </form>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Verification</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <h2>Email Verification</h2>
+
+  <!-- Request OTP Form -->
+  <form id="requestOtpForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
+    <button type="button" onclick="requestOTP()">Request OTP</button>
+  </form>
+
+  <!-- Verify OTP Form -->
+  <form id="verifyOtpForm" style="display: none;">
+    <label for="otp">OTP:</label>
+    <input type="text" id="otp" name="otp" required>
+    <button type="button" onclick="verifyOTP()">Verify OTP</button>
+  </form>
+
+  <script type="text/javascript" src="script3.js">
+  </script>
+</body>
+</html>
